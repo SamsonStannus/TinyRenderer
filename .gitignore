@@ -1,0 +1,7 @@
+# Xcode Files #
+###############
+*.xcodeproj
+
+# Build Path #
+##############
+Build/
