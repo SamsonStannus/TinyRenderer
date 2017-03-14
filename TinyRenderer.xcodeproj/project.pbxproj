@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7370FA141E73676200247974 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7370FA131E73676200247974 /* main.cpp */; };
+		7370FA1C1E73679600247974 /* tgaimage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7370FA1A1E73679600247974 /* tgaimage.cpp */; };
+		7370FA221E75F48200247974 /* model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7370FA211E75F48200247974 /* model.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,13 @@
 /* Begin PBXFileReference section */
 		7370FA101E73676200247974 /* TinyRenderer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TinyRenderer; sourceTree = BUILT_PRODUCTS_DIR; };
 		7370FA131E73676200247974 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		7370FA1A1E73679600247974 /* tgaimage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tgaimage.cpp; sourceTree = "<group>"; };
+		7370FA1B1E73679600247974 /* tgaimage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tgaimage.h; sourceTree = "<group>"; };
+		7370FA1D1E74416000247974 /* output.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = output.tga; sourceTree = "<group>"; };
+		7370FA1F1E759E4D00247974 /* geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = geometry.h; sourceTree = "<group>"; };
+		7370FA201E75F31500247974 /* model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
+		7370FA211E75F48200247974 /* model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = model.cpp; sourceTree = "<group>"; };
+		7370FA231E778C6F00247974 /* head.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = head.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,7 @@
 			children = (
 				7370FA121E73676200247974 /* TinyRenderer */,
 				7370FA111E73676200247974 /* Products */,
+				7370FA1D1E74416000247974 /* output.tga */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +67,23 @@
 		7370FA121E73676200247974 /* TinyRenderer */ = {
 			isa = PBXGroup;
 			children = (
+				7370FA1E1E759E3200247974 /* obj */,
 				7370FA131E73676200247974 /* main.cpp */,
+				7370FA1A1E73679600247974 /* tgaimage.cpp */,
+				7370FA1B1E73679600247974 /* tgaimage.h */,
+				7370FA1F1E759E4D00247974 /* geometry.h */,
+				7370FA201E75F31500247974 /* model.h */,
+				7370FA211E75F48200247974 /* model.cpp */,
 			);
 			path = TinyRenderer;
+			sourceTree = "<group>";
+		};
+		7370FA1E1E759E3200247974 /* obj */ = {
+			isa = PBXGroup;
+			children = (
+				7370FA231E778C6F00247974 /* head.obj */,
+			);
+			name = obj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7370FA1C1E73679600247974 /* tgaimage.cpp in Sources */,
 				7370FA141E73676200247974 /* main.cpp in Sources */,
+				7370FA221E75F48200247974 /* model.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +258,7 @@
 				7370FA191E73676200247974 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
