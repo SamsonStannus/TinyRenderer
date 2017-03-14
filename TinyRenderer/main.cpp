@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
     }
     else
     {
-        model = new Model("/Users/samsonstannus/Desktop/TinyRenderer/TinyRenderer/head.obj");
+        model = new Model("../../../TinyRenderer/head.obj");
     }
     TGAImage image(width, height, TGAImage::RGB);
     
@@ -49,7 +49,7 @@ int main(int argc, char** argv) {
     
     image.flip_vertically();
     std::cout << "Writing File\n";
-    image.write_tga_file("/Users/samsonstannus/Desktop/TinyRenderer/output.tga");
+    image.write_tga_file("../../../output.tga");
     return 0;
 }
 
